@@ -1,0 +1,11 @@
+/**
+ * Device Class Identification:
+ * 
+ * Class Name   :	FinesseDS
+ * Contact      :	filip.lindau@maxlab.lu.se
+ * Class Family :	Controllers
+ * Platform     :	Windows
+ * Bus          :	Serial Line
+ * Manufacturer :	LaserQuantum
+ * Reference    :	Finesse
+ */
