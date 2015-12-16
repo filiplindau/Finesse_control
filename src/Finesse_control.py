@@ -225,7 +225,8 @@ class Finesse_control():
         p1 = self.device.readline(tLength)        
         p2 = self.device.readline(tLength)
         p3 = self.device.readline(tLength)      # Extra newline at the end
-        timers = [(int(p0[-14:-7].rsplit(':', 1)[-1]), 'PSU minutes'),
+                            
+        timers = [(int(p0[-12:-7].rsplit(':', 1)[-1]), 'PSU minutes'),
                   (int(p1[-14:-7].rsplit(':', 1)[-1]), 'Laser enabled minutes'),
                   (int(p2[-14:-7].rsplit(':', 1)[-1]), 'Laser threshold minutes')]
         return timers
@@ -240,5 +241,5 @@ class Finesse_control():
 
         
 if __name__ == '__main__':
-    fc = Finesse_control('com8')
+    fc = Finesse_control('com1')
             
